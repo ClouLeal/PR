@@ -18,14 +18,14 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "${POSTGRES_PORT}:5432"
+      - "${POSTGRES_HOST_PORT}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
   chromadb:
     image: chromadb/chroma:latest
     ports:
-      - "${CHROMA_PORT}:8000"
+      - "${CHROMA_HOST_PORT}:8000"
     volumes:
       - chroma_data:/chroma/chroma
 

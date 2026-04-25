@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+psycopg2-binary
+chromadb-client
+sentence-transformers
+pdfplumber
+anthropic
+python-dotenv
+pydantic-settings
+python-multipart
+openai
